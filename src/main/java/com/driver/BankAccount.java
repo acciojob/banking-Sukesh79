@@ -19,7 +19,7 @@ public class BankAccount {
         //Generate account number having given number of 'digits' such that the sum of digits is equal to 'sum'
         //If it is not possible, throw "Account Number can not be generated" exception
         if(sum < 0 || sum > digits * 9) {
-            throw new AccountNumberCantBeGeneratedException("Account Number can not be generated");
+            throw new Exception("Account Number can not be generated");
         }
         String acNo = "";
         Random rand = new Random();
